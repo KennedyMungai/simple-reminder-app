@@ -18,7 +18,12 @@ export default function RootLayout({
   return (
     <ClerkProvider>
       <html lang="en">
-        <body className={opensans.className}>{children}</body>
+        <body className={opensans.className}>
+          <div className="flex min-h-screen w-full flex-col items-center dark:bg-black">
+            <NavBar />
+            {children}
+          </div>
+        </body>
       </html>
     </ClerkProvider>
   );
