@@ -25,7 +25,7 @@ const ThemeSwitcher = (props: Props) => {
           <SunIcon className="h-[1.2rem] w-[1.2rem]" />
         </TabsTrigger>
         <TabsTrigger value="dark">
-          <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
+          <MoonIcon className="h-[1.2rem] w-[1.2rem] rotate-90 transition-all dark:rotate-0" />
         </TabsTrigger>
         <TabsTrigger value="system">
           <DesktopIcon className="h-[1.2rem] w-[1.2rem]" />
