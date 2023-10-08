@@ -1,6 +1,8 @@
 "use client";
 import { useTheme } from "next-themes";
 import React, { useEffect, useState } from "react";
+import { Tabs, TabsList, TabsTrigger } from "../ui/tabs";
+import { DesktopIcon, MoonIcon, SunIcon } from "@radix-ui/react-icons";
 
 type Props = {};
 
@@ -16,7 +18,21 @@ const ThemeSwitcher = (props: Props) => {
     return null;
   }
 
-  return <div>ThemeSwitcher</div>;
+  return (
+    <Tabs defaultValue={theme}>
+      <TabsList className="border border-neutral-800 dark:bg-[#030303]">
+        <TabsTrigger value="light">
+          <SunIcon className="h-[1.2rem] w-[1.2rem]" />
+        </TabsTrigger>
+        <TabsTrigger value="dark">
+          <MoonIcon className="h-[1.2rem] w-[1.2rem]" />
+        </TabsTrigger>
+        <TabsTrigger value="system">
+          <DesktopIcon className="h-[1.2rem] w-[1.2rem]" />
+        </TabsTrigger>
+      </TabsList>
+    </Tabs>
+  );
 };
 
 export default ThemeSwitcher;
