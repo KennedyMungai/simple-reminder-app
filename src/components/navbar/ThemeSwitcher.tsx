@@ -8,13 +8,13 @@ const ThemeSwitcher = (props: Props) => {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  if (!mounted) {
-    return null;
-  }
-
   useEffect(() => {
     setMounted(false);
   }, []);
+
+  if (!mounted) {
+    return null;
+  }
 
   return <div>ThemeSwitcher</div>;
 };
