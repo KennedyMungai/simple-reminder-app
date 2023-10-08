@@ -7,7 +7,7 @@ type Props = {};
 
 const NavBar = (props: Props) => {
   return (
-    <nav>
+    <nav className="flex w-full items-center justify-between p-4 px-8 h-[10vh]">
       <Logo />
       <div className="">
         <UserButton afterSignOutUrl="/" />
