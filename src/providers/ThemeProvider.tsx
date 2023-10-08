@@ -7,7 +7,11 @@ type Props = {
 };
 
 const ThemeProvider = ({ children }: Props) => {
-  return <NextThemesProvider>{children}</NextThemesProvider>;
+  return (
+    <NextThemesProvider attribute="class" enableSystem>
+      {children}
+    </NextThemesProvider>
+  );
 };
 
 export default ThemeProvider;
