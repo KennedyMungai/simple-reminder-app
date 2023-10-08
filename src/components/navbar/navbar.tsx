@@ -1,6 +1,7 @@
 import { UserButton } from "@clerk/nextjs";
 import React from "react";
 import Logo from "./logo";
+import ThemeSwitcher from "./ThemeSwitcher";
 
 type Props = {};
 
