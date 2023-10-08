@@ -20,8 +20,8 @@ export default function RootLayout({
 }) {
   return (
     <ClerkProvider>
-      <html lang="en">
-        <body className={opensans.className}>
+      <html lang="en" className={opensans.className}>
+        <body>
           <ThemeProvider>
             <div className="flex min-h-screen w-full flex-col items-center dark:bg-black">
               <NavBar />
